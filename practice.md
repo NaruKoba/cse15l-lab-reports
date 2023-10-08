@@ -13,6 +13,7 @@ For the third command: cat, my working directory was ~, home directory. Cat comm
 
 ![Image](noarga3.png)
 
+
 ## the command with a path to a directory as an argument
 
 ![Image](directoryex.png)
