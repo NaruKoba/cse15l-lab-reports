@@ -29,7 +29,7 @@ For the third command: cat, my working directory was ~/lecture1, lecuture1 direc
 
 ![Image](fileex.png)
 
-For the first command: cd, my working directory was ~/lecture1/messages, messages directory. Cd command changes a working directory to the directory given as an argument to the cd command. Since I put the relative path to ja.txt, my working directory was not changed　and it showed an error message saying "This is a txt file, not a directory". The output indicates this is an error.  
+For the first command: cd, my working directory was ~/lecture1/messages, messages directory. Cd command changes a working directory to the directory given as an argument to the cd command. Since I put the relative path to ja.txt which is not directory, my working directory was not changed and it showed an error message saying "This is a txt file, not a directory". The output indicates this is an error.  
 
 For the second command: ls,  my working directory  was  ~/lecture1/messages, messages directory. ls command lists all of the files and directories inside the directory referred to as an argument. The ls command can also search only for a specified file, whether the file exits or not. Since I put the relative path to the existing file, ja.txt, as an argument, it outputted ja.txt inside the working directory. Therefore, the output indicates this is not an error.  
 
