@@ -1,4 +1,7 @@
 # Practice
+
+## The command with no arguments
+
 ![Image](noarg.png)
 
 For the first line of the command cd, my working directory was ~/lecture1/messages, messages directory. I didn't put any argument for cd command, so no argument behaved like home directory and my working directory was changed to home directory. The output indicates this is not an error. 
