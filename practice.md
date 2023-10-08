@@ -11,7 +11,7 @@ For the second command: ls, my working directory  was ~, home directory. ls comm
 
 For the third command: cat, my working directory was ~, home directory. Cat command prints the contents of a file or files, and concatenates the contents if multiple files are provided as arguments to cat command. Since I don't put any argument, it waits for an input from standard input, and prints input if I write words in next line. I simply typed ^C to exit from the command without typing any words before ^C. In the following example, I typed "hello world" before I exited and it returned the same message in the next line. The output indicates this is not an error. 
 
-![Image](noarg#3.png)
+![Image](noarga3.png)
 
 
 
