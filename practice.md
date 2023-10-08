@@ -1,6 +1,8 @@
 # Practice
 
+
 ## The command with no arguments
+
 
 ![Image](noarg.png)
 
