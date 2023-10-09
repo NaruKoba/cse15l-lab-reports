@@ -1,5 +1,9 @@
 # Lab Report 1 - Remote Access and FileSystem (Week 1)
 
+## Directories and files in my workspace
+
+![Image](directoriesandfiles.png)
+
 
 ## The command with no arguments
 
