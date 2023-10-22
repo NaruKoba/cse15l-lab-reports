@@ -1,6 +1,6 @@
 adeafe
 
-irjaieijaig　-fliction
+irjaieijaig　
 
 jfijijjeaige
 
