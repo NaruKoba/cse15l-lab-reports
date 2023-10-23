@@ -1,6 +1,6 @@
 # Lab Report 2 - Servers and SSH Keys (Week 3)
 
-## part 1
+## Part 1
 
 Terminal when I run the server.
 
@@ -86,7 +86,7 @@ class StringServer {
 For both requests, the handleRequest method is called with the respective URI. The num field is incremented with each request, and the messages StringBuilder is appended with the new message.
 
 
-## part2
+## Part2
 The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer)
 ![Image](part2-1.png)
 
@@ -95,3 +95,7 @@ The path to the public key for your SSH key for logging into ieng6 (within your 
 
 A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
 ![Image](part2-3.png)
+
+## Part 3
+
+I learned how to launch a server and what each component in URL represents such as Domain, Path, Query, and Anchor. I also learned how to create ssh keys, public key and private key to access to remote server.
