@@ -2,6 +2,10 @@
 
 ## part 1
 
+Terminal when I run the server.
+
+![Image](noarg.png)
+
 Here is my code in StringServer.java
 
 ```
