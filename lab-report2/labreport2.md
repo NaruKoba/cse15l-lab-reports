@@ -48,7 +48,7 @@ class StringServer {
 ```
 
 ## Request: /add-message?s=Hello
-
+![Image](firstsc.png)
     Which methods in your code are called?
         handleRequest(URI url)
 
@@ -64,7 +64,7 @@ class StringServer {
             messages now contains the string "1. Hello\n"
 
 ## Request: /add-message?s=How are you
-
+![Image](secsc.png)
     Which methods in your code are called?
         handleRequest(URI URL)
 
@@ -84,8 +84,8 @@ class StringServer {
 For both requests, the handleRequest method is called with the respective URI. The num field is incremented with each request, and the messages StringBuilder is appended with the new message.
 
 
-## The command with no arguments
+## part2
 
-![Image](noarg.png)
-
-For the first command: cd, my working directory was ~/lecture1/messages, messages directory. Cd command changes a working directory to the directory given as an argument to the cd command. I didn't put any argument for cd command, so no argument behaved like home directory and my working directory was changed to home directory. Therefore, the output indicates this is not an error. 
+![Image](part2-1.png)
+![Image](part2-2.png)
+![Image](part2-3.png)
