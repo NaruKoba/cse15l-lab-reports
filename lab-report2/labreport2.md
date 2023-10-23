@@ -42,6 +42,7 @@ class StringServer {
 }
 
 ```
+
 ## Request: /add-message?s=Hello
 
     Which methods in your code are called?
