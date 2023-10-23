@@ -49,6 +49,7 @@ class StringServer {
 
 ## Request: /add-message?s=Hello
 ![Image](firstsc.png)
+
     Which methods in your code are called?
         handleRequest(URI url)
 
@@ -65,6 +66,7 @@ class StringServer {
 
 ## Request: /add-message?s=How are you
 ![Image](secsc.png)
+
     Which methods in your code are called?
         handleRequest(URI URL)
 
