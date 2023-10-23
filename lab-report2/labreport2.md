@@ -64,13 +64,13 @@ class StringServer {
     Which methods in your code are called?
         handleRequest(URI url)
 
-    What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?
         Argument to handleRequest: url with a value of new URI("/add-message?s=How are you")
         Relevant field values before method execution:
             num = 1 (from the previous request)
             messages = "1. Hello\n"
 
-    How do the values of any relevant fields of the class change from this specific request?
+How do the values of any relevant fields of the class change from this specific request?
         After the method execution:
             num becomes 2 (because we incremented it)
             messages now contains the string:
