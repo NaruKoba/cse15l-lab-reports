@@ -87,7 +87,11 @@ For both requests, the handleRequest method is called with the respective URI. T
 
 
 ## part2
-
+The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer)
 ![Image](part2-1.png)
+
+The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6)
 ![Image](part2-2.png)
+
+A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
 ![Image](part2-3.png)
