@@ -4,7 +4,7 @@
 
 Terminal when I run the server.
 
-![Image](noarg.png)
+![Image](terminalpart1.png)
 
 Here is my code in StringServer.java
 
