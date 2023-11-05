@@ -18,10 +18,13 @@ public class ArrayTests {
   public void testAverageWithoutLowest_Failure(){
     double[] input = {1.0, 1.0, 3.0, 4.0};
     double result = ArrayExamples.averageWithoutLowest(input);
-    assertEquals(3.5, result);
+    assertEquals(3.5, result, 0.0001);
   }
 }
 ```
+
+### A failure-inducing input for the buggy program
+
 
 ## Request: /add-message?s=Hello
 ![Image](firstsc.png)
