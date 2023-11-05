@@ -90,12 +90,12 @@ output;
 
 ### Why the Fix Addresses the Issue
 
-    It checks if the array has fewer than two elements. If so, it returns 0.0 because I can't compute an average without at least two numbers (excluding the lowest).
-    It initializes lowest with the first element and sets lowestCount to 0.
-    It iterates through the array to find the lowest number and counts how many times this lowest number appears.
-    It sums up all the numbers in the array.
-    It calculates the average by subtracting the total value of the lowest number(s) from the sum and dividing by the number of elements minus the count of the lowest number(s).
-    This logic ensures that if there are multiple instances of the lowest number, all are excluded from the average calculation.
+It checks if the array has fewer than two elements. If so, it returns 0.0 because I can't compute an average without at least two numbers (excluding the lowest).
+It initializes lowest with the first element and sets lowestCount to 0.
+It iterates through the array to find the lowest number and counts how many times this lowest number appears.
+It sums up all the numbers in the array.
+It calculates the average by subtracting the total value of the lowest number(s) from the sum and dividing by the number of elements minus the count of the lowest number(s).
+This logic ensures that if there are multiple instances of the lowest number, all are excluded from the average calculation.
     
 ## Request: /add-message?s=Hello
 ![Image](firstsc.png)
