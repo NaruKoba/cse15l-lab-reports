@@ -46,6 +46,7 @@ Here is the buggy averageWithoutLowest method:
 
 ```
 public class ArrayExamples {
+
   static double averageWithoutLowest(double[] arr) {
       if(arr.length < 2) { return 0.0; }
       double lowest = arr[0];
@@ -59,10 +60,31 @@ public class ArrayExamples {
       return sum / (arr.length - 1);
     }
 
-
 }
 ```
 
+Here is the fixed averageWithoutLowest method:
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    int lowestCount = 0;
+    for(double num: arr) {
+      if(num < lowest) {
+        lowest = num;
+        lowestCount = 1;
+      } else if (num == lowest) {
+        lowestCount++;
+      }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      sum += num;
+    }
+    return (sum - lowest * lowestCount) / (arr.length - lowestCount);
+  }
+
+```
 ## Request: /add-message?s=Hello
 ![Image](firstsc.png)
 
