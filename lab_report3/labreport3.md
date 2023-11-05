@@ -2,9 +2,7 @@
 
 ## Part 1
 
-![Image](terminalpart1.png)
-
-### Here is JUnit test code for failure-inducing input for the buggy program, the averageWithoutLowest;
+### Here is JUnit test code for failure-inducing input for the buggy program, the averageWithoutLowest; - (1)
 
 ```
 import static org.junit.Assert.*;
@@ -21,7 +19,7 @@ public class ArrayTests {
 }
 ```
 
-### Here's the JUnit test code for the non-failure-inducing input for the buggy program, the averageWithoutLowest;
+### Here's the JUnit test code for the non-failure-inducing input for the buggy program, the averageWithoutLowest; - (2)
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -36,8 +34,11 @@ public class ArrayTests {
 ```
 
 ### The symptom
+(1);
+![Image](failure.png)
 
-![Image](terminalpart1.png)
+(2);
+![Image](non-failure.png)
 
 
 ## Request: /add-message?s=Hello
