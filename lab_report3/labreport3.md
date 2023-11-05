@@ -85,6 +85,9 @@ static double averageWithoutLowest(double[] arr) {
   }
 
 ```
+output;
+![Image](failure.png)
+
 ## Request: /add-message?s=Hello
 ![Image](firstsc.png)
 
