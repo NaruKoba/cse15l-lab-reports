@@ -9,42 +9,18 @@ Terminal when I run the server.
 Here is JUnit test code for failure-inducing input for the buggy program, the averageWithoutLowest;
 
 ```
-import java.io.IOException;
-import java.net.URI;
+import static org.junit.Assert.*;
+import org.junit.*;
 
-class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
-    int num = 0;
-    StringBuilder messages = new StringBuilder();
+public class ArrayTests {
 
-    public String handleRequest(URI url) {
-            if (url.getPath().contains("/add-message")) {
-                String[] parameters = url.getQuery().split("=");
-                if (parameters[0].equals("s")) {
-                    num += 1;
-                    messages.append(String.format("%d. %s" + "\n", num, parameters[1]));
-                    return messages.toString();
-                }
-            }
-            return "404 Not Found!";
-        
-    }
+  @Test
+  public void testAverageWithoutLowest_Failure(){
+    double[] input = {1.0, 1.0, 3.0, 4.0};
+    double result = ArrayExamples.averageWithoutLowest(input);
+    assertEquals(3.5, result);
+  }
 }
-
-class StringServer {
-    public static void main(String[] args) throws IOException {
-        if(args.length == 0){
-            System.out.println("Missing port number! Try any number between 1024 to 49151");
-            return;
-        }
-
-        int port = Integer.parseInt(args[0]);
-
-        Server.start(port, new Handler());
-    }
-}
-
 ```
 
 ## Request: /add-message?s=Hello
