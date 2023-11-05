@@ -40,6 +40,28 @@ public class ArrayTests {
 (2);
 ![Image](non-failure.png)
 
+### The bug
+
+Here is the buggy averageWithoutLowest method:
+
+```
+public class ArrayExamples {
+  static double averageWithoutLowest(double[] arr) {
+      if(arr.length < 2) { return 0.0; }
+      double lowest = arr[0];
+      for(double num: arr) {
+        if(num < lowest) { lowest = num; }
+      }
+      double sum = 0;
+      for(double num: arr) {
+        if(num != lowest) { sum += num; }
+      }
+      return sum / (arr.length - 1);
+    }
+
+
+}
+```
 
 ## Request: /add-message?s=Hello
 ![Image](firstsc.png)
