@@ -2,7 +2,7 @@
 
 ## Part 1
 
-Terminal when I run the server.
+### A failure-inducing input for the buggy program
 
 ![Image](terminalpart1.png)
 
