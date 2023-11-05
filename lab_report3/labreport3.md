@@ -2,11 +2,9 @@
 
 ## Part 1
 
-### A failure-inducing input for the buggy program
-
 ![Image](terminalpart1.png)
 
-Here is JUnit test code for failure-inducing input for the buggy program, the averageWithoutLowest;
+### Here is JUnit test code for failure-inducing input for the buggy program, the averageWithoutLowest;
 
 ```
 import static org.junit.Assert.*;
@@ -23,7 +21,20 @@ public class ArrayTests {
 }
 ```
 
-### A failure-inducing input for the buggy program
+### Here's the JUnit test code for the non-failure-inducing input for the buggy program, the averageWithoutLowest;
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+@Test
+  public void testAverageWithoutLowerst_Success(){
+    double[] input = {2.0, 3.0, 4.0};
+    double result = ArrayExamples.averageWithoutLowest(input);
+    assertEquals(3.5, result, 0.0001);
+}
+```
+
 
 
 ## Request: /add-message?s=Hello
