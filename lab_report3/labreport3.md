@@ -6,7 +6,7 @@ Terminal when I run the server.
 
 ![Image](terminalpart1.png)
 
-Here is my code in averageWithoutLowest
+Here is JUnit test code for failure-inducing input for the buggy program, the averageWithoutLowest;
 
 ```
 import java.io.IOException;
