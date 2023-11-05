@@ -35,6 +35,9 @@ public class ArrayTests {
 }
 ```
 
+### The symptom
+
+![Image](terminalpart1.png)
 
 
 ## Request: /add-message?s=Hello
