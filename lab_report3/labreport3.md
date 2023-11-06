@@ -98,7 +98,6 @@ It calculates the average by subtracting the total value of the lowest number(s)
 This logic ensures that if there are multiple instances of the lowest number, all are excluded from the average calculation.
     
 ## part 2
-![Image](firstsc.png)
 
 ### Using the -name option
 
@@ -108,7 +107,7 @@ Example 1: Finding a file by name
 $ find ./technical -type f  -name "chapter*.txt"
 ```
 Output:
-![Image](firstsc.png)
+![Image](option_name_file.png)
 This command searches for files (-type f) named chapter*.name within the ./technical directory and its subdirectories. * is used to create a pattern. It's useful for locating all instances of files with a specific name.
 
 Example 2: Finding a directory by name
@@ -116,7 +115,7 @@ Example 2: Finding a directory by name
 $ find ./technical -type d  -name "A*"  
 ```
 Output:
-![Image](firstsc.png)
+![Image](option_name_directory.png)
 This command searches for directories (-type d) named A* within the ./technical directory. * is used to create a pattern. This is useful for locating directories with a specific name.
 
 ### Using the -iname option
@@ -125,16 +124,18 @@ The -iname option is similar to -name, but it is case-insensitive, making it use
 
 Example 1: Case-insensitive file search
 ```
-$find ./technical -type f -iname "*E*"
+$ find ./technical -type f -iname "*E*"
 ```
 Output:
-![Image](firstsc.png)
+![Image](option_iname_file.png)
 This command searches for any file with a case-insensitive match to * E *. It's useful when you are unsure of the case used in the file names.
 
 Example 2: Case-insensitive directory search
 ```
+$ find ./technical -type d -iname "*p*"
 ```
-
+Output:
+![Image](option_iname_directory.png)
 
 
 
