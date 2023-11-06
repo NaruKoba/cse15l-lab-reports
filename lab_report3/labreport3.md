@@ -99,7 +99,7 @@ This logic ensures that if there are multiple instances of the lowest number, al
     
 ## part 2
 
-### Using the -name option
+### 1. Using the -name option
 
 The -name option allows you to search for files or directories that match a given pattern.
 Example 1: Finding a file by name
@@ -118,7 +118,7 @@ Output:
 ![Image](option_name_directory.png)
 This command searches for directories (-type d) named A* within the ./technical directory. * is used to create a pattern. This is useful for locating directories with a specific name.
 
-### Using the -iname option
+### 2. Using the -iname option
 
 The -iname option is similar to -name, but it is case-insensitive, making it useful for when the exact case of the target files or directories is unknown or mixed.
 
@@ -136,6 +136,51 @@ $ find ./technical -type d -iname "*p*"
 ```
 Output:
 ![Image](option_iname_directory.png)
+This command searches for directories with a case-insensitive match to *p*. This is useful for finding directories when the naming convention is not consistently applied.
 
+### 3. Using the -size option
 
+The -size option allows you to find files of a specific size. This can be useful for locating files that are too large or to identify files that are empty.
 
+Example 1: Finding files less than 1 kilobyte
+```
+$ find ./technical -type f -size -1k 
+```
+Output:
+![Image](option_iname_directory.png)
+This command lists files less than 1 kilobyte. It's useful for identifying large files that may be taking up too much space.
+
+Example 2: Finding empty files
+```
+$ find ./technical -type f -size 0
+```
+Output:
+![Image](option_iname_directory.png)
+This command finds files that are exactly 0 bytes in size, which often indicates empty files. This can be useful for cleaning up unnecessary files from a directory.
+
+Example 3: Finding directories less than 10 kilobytes
+```
+find ./technical -type d  -size -10k
+```
+Output:
+![Image](option_iname_directory.png)
+This command finds directories less than 10 kilobytes. This can be useful for cleaning up large-size directories.
+
+### 4. Using the -mtime option
+The -mtime option finds files based on their modification time. This can be useful for locating recently modified files or files that haven't been touched in a long time.
+
+Example 1: Finding files modified in the last 24 hours
+```
+$ find ./technical -type f -mtime -1
+```
+Output:
+![Image](option_iname_directory.png)
+This command finds files that have been modified in the last 24 hours. It's useful for reviewing recent changes.
+
+Example 2: Finding directories not modified in the last 30 days
+```
+$ find ./technical -type d -mtime +30
+```
+Output:
+![Image](option_iname_directory.png)
+This command lists directories that have not been modified in the last 30 days. This can be helpful for identifying outdated directories that may no longer be needed.
