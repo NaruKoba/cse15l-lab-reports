@@ -97,56 +97,44 @@ It sums up all the numbers in the array.
 It calculates the average by subtracting the total value of the lowest number(s) from the sum and dividing by the number of elements minus the count of the lowest number(s).
 This logic ensures that if there are multiple instances of the lowest number, all are excluded from the average calculation.
     
-## Request: /add-message?s=Hello
+## part 2
 ![Image](firstsc.png)
 
-    Which methods in your code are called?
-        handleRequest(URI url)
+### Using the -name option
 
-    What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-        Argument to handleRequest: url with a value of new URI("/add-message?s=Hello")
-        Relevant field values before method execution:
-            num = 0
-            messages = (an empty StringBuilder)
+The -name option allows you to search for files or directories that match a given pattern.
+Example 1: Finding a file by name
+```
+$ find ./technical -type f  -name "chapter*.txt"
+```
+Output:
+![Image](firstsc.png)
+This command searches for files (-type f) named chapter*.name within the ./technical directory and its subdirectories. * is used to create a pattern. It's useful for locating all instances of files with a specific name.
 
-    How do the values of any relevant fields of the class change from this specific request?
-        After the method execution:
-            num becomes 1 (because we incremented it)
-            messages now contains the string "1. Hello\n"
+Example 2: Finding a directory by name
+```
+$ find ./technical -type d  -name "A*"  
+```
+Output:
+![Image](firstsc.png)
+This command searches for directories (-type d) named A* within the ./technical directory. * is used to create a pattern. This is useful for locating directories with a specific name.
 
-## Request: /add-message?s=How are you
-![Image](secsc.png)
+### Using the -iname option
 
-    Which methods in your code are called?
-        handleRequest(URI URL)
+The -iname option is similar to -name, but it is case-insensitive, making it useful for when the exact case of the target files or directories is unknown or mixed.
 
-    What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-        Argument to handleRequest: url with a value of new URI("/add-message?s=How are you")
-        Relevant field values before method execution:
-            num = 1 (from the previous request)
-            messages = "1. Hello\n"
+Example 1: Case-insensitive file search
+```
+$find ./technical -type f -iname "*E*"
+```
+Output:
+![Image](firstsc.png)
+This command searches for any file with a case-insensitive match to * E *. It's useful when you are unsure of the case used in the file names.
 
-    How do the values of any relevant fields of the class change from this specific request?
-        After the method execution:
-            num becomes 2 (because we incremented it)
-            messages now contains the string:
-            1. Hello
-            2. How are you
-
-For both requests, the handleRequest method is called with the respective URI. The num field is incremented with each request, and the messages StringBuilder is appended with the new message.
+Example 2: Case-insensitive directory search
+```
+```
 
 
-## Part2
-The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer)
-![Image](part2-1.png)
 
-The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6)
-![Image](part2-2.png)
-
-A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
-![Image](part2-3.png)
-
-## Part 3
-
-I learned how to launch a server and what each component in URL represents such as Domain, Path, Query, and Anchor. I also learned how to create ssh keys, public key and private key to access to remote server.
 
