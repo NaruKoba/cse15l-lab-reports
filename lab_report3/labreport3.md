@@ -147,7 +147,7 @@ Example 1: Finding files less than 1 kilobyte
 $ find ./technical -type f -size -1k 
 ```
 Output:
-![Image](option_iname_directory.png)
+![Image](less_than_1kb.png)
 This command lists files less than 1 kilobyte. It's useful for identifying large files that may be taking up too much space.
 
 Example 2: Finding empty files
@@ -155,7 +155,7 @@ Example 2: Finding empty files
 $ find ./technical -type f -size 0
 ```
 Output:
-![Image](option_iname_directory.png)
+![Image](emptyfiles.png)
 This command finds files that are exactly 0 bytes in size, which often indicates empty files. This can be useful for cleaning up unnecessary files from a directory.
 
 Example 3: Finding directories less than 10 kilobytes
@@ -163,7 +163,7 @@ Example 3: Finding directories less than 10 kilobytes
 find ./technical -type d  -size -10k
 ```
 Output:
-![Image](option_iname_directory.png)
+![Image](size_directory.png)
 This command finds directories less than 10 kilobytes. This can be useful for cleaning up large-size directories.
 
 ### 4. Using the -mtime option
@@ -174,7 +174,7 @@ Example 1: Finding files modified in the last 24 hours
 $ find ./technical -type f -mtime -1
 ```
 Output:
-![Image](option_iname_directory.png)
+![Image](modified_lessthan_24hours.png)
 This command finds files that have been modified in the last 24 hours. It's useful for reviewing recent changes.
 
 Example 2: Finding directories not modified in the last 30 days
@@ -182,5 +182,5 @@ Example 2: Finding directories not modified in the last 30 days
 $ find ./technical -type d -mtime +30
 ```
 Output:
-![Image](option_iname_directory.png)
+![Image](notmodified_last30days.png)
 This command lists directories that have not been modified in the last 30 days. This can be helpful for identifying outdated directories that may no longer be needed.
