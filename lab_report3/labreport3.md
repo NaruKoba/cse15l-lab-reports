@@ -109,6 +109,7 @@ $ find ./technical -type f  -name "chapter*.txt"
 Output:
 ![Image](option_name_file.png)
 This command searches for files (-type f) named chapter*.name within the ./technical directory and its subdirectories. * is used to create a pattern. It's useful for locating all instances of files with a specific name.
+
 Markdown for the Output:
 ```
 ./technical/911report/chapter-13.4.txt
@@ -135,6 +136,7 @@ $ find ./technical -type d  -name "A*"
 Output:
 ![Image](option_name_directory.png)
 This command searches for directories (-type d) named A* within the ./technical directory. * is used to create a pattern. This is useful for locating directories with a specific name.
+
 Markdown for the Output:
 ```
 ./technical/government/About_LSC
@@ -151,6 +153,7 @@ $ find ./technical -type f -iname "*E*"
 Output:
 ![Image](option_iname_file.png)
 This command searches for any file with a case-insensitive match to * E *. It's useful when you are unsure of the case used in the file names.
+
 Markdown for the Output:
 ```
 ./technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
@@ -603,6 +606,7 @@ $ find ./technical -type d -iname "*p*"
 Output:
 ![Image](option_iname_directory.png)
 This command searches for directories with a case-insensitive match to *p*. This is useful for finding directories when the naming convention is not consistently applied.
+
 Markdown for the Output:
 ```
 ./technical/government/Env_Prot_Agen
@@ -649,6 +653,7 @@ find ./technical -type d  -size -10k
 Output:
 ![Image](size_directory.png)
 This command finds directories less than 10 kilobytes. This can be useful for cleaning up large-size directories.
+
 Markdown for the Output:
 ```
 ./technical
@@ -673,6 +678,7 @@ $ find ./technical -type f -mtime -1
 Output:
 ![Image](modified_lessthan_24hours.png)
 This command finds files that have been modified in the last 24 hours. It's useful for reviewing recent changes.
+
 Markdown for the Output:
 ```
 ./technical/.DS_Store
@@ -686,6 +692,7 @@ $ find ./technical -type d -mtime +30
 Output:
 ![Image](notmodified_last30days.png)
 This command lists directories that have not been modified in the last 30 days. This can be helpful for identifying outdated directories that may no longer be needed.
+
 Markdown for the Output:
 ```
 ```
