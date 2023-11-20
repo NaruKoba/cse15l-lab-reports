@@ -103,6 +103,7 @@ This logic ensures that if there are multiple instances of the lowest number, al
 The -name option allows you to search for files or directories that match a given pattern.
 #### Citation of resource for this option
 “Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/. 
+
 Example 1: Finding a file by name
 ```
 $ find ./technical -type f  -name "chapter*.txt"
@@ -146,6 +147,8 @@ Markdown for the Output:
 ### 2. Using the -iname option
 
 The -iname option is similar to -name, but it is case-insensitive, making it useful for when the exact case of the target files or directories is unknown or mixed.
+#### Citation of resource for this option
+“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/.
 
 Example 1: Case-insensitive file search
 ```
@@ -620,6 +623,9 @@ Markdown for the Output:
 
 The -size option allows you to find files of a specific size. This can be useful for locating files that are too large or to identify files that are empty.
 
+#### Citation of resource for this option
+“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/.
+
 Example 1: Finding files less than 1 kilobyte
 ```
 $ find ./technical -type f -size -1k 
@@ -671,6 +677,9 @@ Markdown for the Output:
 
 ### 4. Using the -mtime option
 The -mtime option finds files based on their modification time. This can be useful for locating recently modified files or files that haven't been touched in a long time.
+
+#### Citation of resource for this option
+“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/
 
 Example 1: Finding files modified in the last 24 hours
 ```
