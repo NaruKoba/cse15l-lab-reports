@@ -46,12 +46,11 @@ Opened ListExamples.java and corrected the error in the merge method (change ind
 ```
 $ vim ListExamples.java
 
+```
 Inside of ListExamples.java:
 
 Pressed < j > about 40 times to get to the error line and pressed < l > for the cursor to be next to 1. Pressed < i > to change normal mode to insert mode. Pressed < backspace > to delete 1 and typed < 2 >. Pressed <esc> to return to normal mode. Pressed <:wq> to save changes and quit from vim editor. 
 
-```
-Opened the file in a text editor, navigated to the error, and made the correction.
 
 
 ## Step 8: Run the Tests (Demonstrating Success)
