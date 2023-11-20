@@ -2,11 +2,11 @@
 
 ## Step4: Log into ieng6
 
-### Action
+### Action:
 Used SSH to log into the ieng6 server.
-### Screenshot
+### Screenshot:
 ![Image](ssh(login).png)
-### Key pressed
+### Key pressed:
 ```
  $ ssh cs15lfa23en@ieng6.ucsd.edu
 ```
@@ -14,11 +14,11 @@ Typed the SSH command to connect to the server.
 
 ## Step 5: Clone Your Repository
 
-### Action
+### Action:
 Cloned my repository from GitHub using the SSH URL.
-### Screenshot
+### Screenshot:
 ![Image](gitclone.png)
-### Key pressed
+### Key pressed:
 ```
  $ git clone git@github.com:NaruKoba/lab7.git
 ```
@@ -26,11 +26,11 @@ Entered the git clone command followed by the SSH URL of my repository.
 
 ## Step 6: Run the Tests (Demonstrating Failure)
 
-### Action
+### Action:
 Executed the tests in my project to show that they failed initially.
-### Screenshot
+### Screenshot:
 ![Image](bash(fail).png)
-### Key pressed
+### Key pressed:
 ```
  $ bash test.sh
 ```
@@ -38,11 +38,11 @@ Typed bash test.sh to compile all of java files and run ListExamplesTests in lab
 
 ## Step 7: Edit the Code File (ListExamples.java)
 
-### Action
+### Action:
 Opened ListExamples.java and corrected the error in the merge method (change index1 to index2 in the final loop).
-### Screenshot
+### Screenshot:
 ![Image](vim.png)
-### Key pressed
+### Key pressed:
 ```
 $ vim ListExamples.java
 
@@ -55,11 +55,11 @@ Pressed `< j >` about 40 times to get to the error line and pressed `< l >` for 
 
 ## Step 8: Run the Tests (Demonstrating Success)
 
-### Action
+### Action:
 Re-run the tests to demonstrate that my code changes have fixed the issue.
-### Screenshot
+### Screenshot:
 ![Image](bash(success).png)
-### Key pressed
+### Key pressed:
 ```
 $  bash test.sh
 
@@ -69,11 +69,11 @@ Similar to step 6, typed bash test.sh to recompile and run the tests.
 
 ## Step 9: Commit and Push Changes
 
-### Action
+### Action:
 Committed the corrected file to my local Git repository and then pushed the changes to my GitHub account.
-### Screenshot
+### Screenshot:
 ![Image](gitaddcommitpush.png)
-### Key pressed
+### Key pressed:
 ```
 $   git add ListExamples.java
 $   git commit -m "fixed indecies"
