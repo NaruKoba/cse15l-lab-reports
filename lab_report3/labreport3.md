@@ -100,8 +100,9 @@ This logic ensures that if there are multiple instances of the lowest number, al
 ## part 2
 
 ### 1. Using the -name option
-
 The -name option allows you to search for files or directories that match a given pattern.
+#### Citation of resource for this option
+“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/. 
 Example 1: Finding a file by name
 ```
 $ find ./technical -type f  -name "chapter*.txt"
