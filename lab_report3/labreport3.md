@@ -147,8 +147,9 @@ Markdown for the Output:
 ### 2. Using the -iname option
 
 The -iname option is similar to -name, but it is case-insensitive, making it useful for when the exact case of the target files or directories is unknown or mixed.
+
 #### Citation of resource for this option
-“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/.
+“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/
 
 Example 1: Case-insensitive file search
 ```
