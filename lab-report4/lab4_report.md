@@ -68,20 +68,6 @@ $  bash test.sh
 Similar to step 6, typed bash test.sh to recompile and run the tests.
 
 
-## Step 8: Run the Tests (Demonstrating Success)
-
-### Action
-Re-run the tests to demonstrate that my code changes have fixed the issue.
-### Screenshot
-![Image](bash(success).png)
-### Key pressed
-```
-$  bash test.sh
-
-```
-Similar to step 6, typed bash test.sh to recompile and run the tests.
-
-
 ## Step 9: Commit and Push Changes
 
 ### Action
