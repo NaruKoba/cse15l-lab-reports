@@ -101,8 +101,9 @@ This logic ensures that if there are multiple instances of the lowest number, al
 
 ### 1. Using the -name option
 The -name option allows you to search for files or directories that match a given pattern.
+
 #### Citation of resource for this option
-“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/. 
+“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/ 
 
 Example 1: Finding a file by name
 ```
@@ -625,7 +626,7 @@ Markdown for the Output:
 The -size option allows you to find files of a specific size. This can be useful for locating files that are too large or to identify files that are empty.
 
 #### Citation of resource for this option
-“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/.
+“Find Command in Linux with Practical Examples.” TecAdmin, 23 Mar. 2023, https://tecadmin.net/linux-find-command-with-examples/
 
 Example 1: Finding files less than 1 kilobyte
 ```
