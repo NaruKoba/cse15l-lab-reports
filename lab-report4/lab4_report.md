@@ -14,11 +14,11 @@ Typed the SSH command to connect to the server.
 
 ## Step 5: Clone Your Repository
 
-### Action:
+### Action :
 Cloned my repository from GitHub using the SSH URL.
 ### Screenshot:
 ![Image](gitclone.png)
-### Key pressed:
+### Key pressed :
 ```
  $ git clone git@github.com:NaruKoba/lab7.git
 ```
