@@ -154,6 +154,7 @@ I fixed the code like the following:
 // Updated to correctly count words, considering multiple spaces and punctuation
         return content.trim().split("\\s+").length;
 ```
+![Image](fixedwordcount.png)
 
 Thank you, I got the correct output.
 
