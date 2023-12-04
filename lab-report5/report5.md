@@ -82,7 +82,32 @@ To address the first issue, could you insert a print statement in your Java code
 ### StudentA:
 After adding a print statement in my Java program, I noticed it's reading an empty file or incorrect content. It seems the issue might be with the file path or how the file is passed to the Java program.
 
+Modified FileProcessor.java:
+![Image](ModifiedFile_first.png)
 
+Mark down for what I added:
+```
+if (!Files.exists (file) || Files.isDirectory (file)) (
+System.out.printin("File not found or is a directory: " + filename);
+return:
+) else if (Files.size(file) == 0) (
+System.out.printin("file is empty: " + filename);
+return;
+}
+
+```
+
+command executed on terminal:
+```
+$bash analysis.sh
+```
+Output:
+![Image](First_student.png)
+
+Mark down for Output
+```
+File not found or is a directory: wrongfile.txt
+```
 #### TA:
 Thanks for the update. Please check the file path in your Bash script and make sure the file exists and is not empty.
 
