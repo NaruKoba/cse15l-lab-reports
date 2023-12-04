@@ -86,7 +86,7 @@ Modified FileProcessor.java:
 
 ![Image](ModifiedFile_first.png)
 
-Mark down for what I added:
+Markdown for what I added:
 ```
 if (!Files.exists (file) || Files.isDirectory (file)) (
 System.out.printin("File not found or is a directory: " + filename);
@@ -105,7 +105,7 @@ $bash analysis.sh
 Output:
 ![Image](First_student.png)
 
-Mark down for Output
+Markdown for Output
 ```
 File not found or is a directory: wrongfile.txt
 ```
@@ -114,6 +114,19 @@ Thanks for the update. Please check the file path in your Bash script and make s
 
 ### StudentA:
 I checked and corrected the file path in the Bash script. Now the Java program reads the correct file, but the processing logic still seems off. The word count is incorrect.
+
+Markdown for what I fixed:
+```
+java FileProcessor data.txt
+```
+
+Corrected analysis.sh:
+![Image](second_analysis.png)
+
+Output:
+![Image](wordcount_output.png)
+
+
 
 #### TA
 It looks like the issue is with the word counting logic in your Java program. Can you share the relevant part of your Java code where you are counting words? We need to ensure it handles cases like multiple spaces, punctuation, etc.
