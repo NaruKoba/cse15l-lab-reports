@@ -93,7 +93,7 @@ After adding a print statement in my Java program, I noticed it's reading an emp
 
 Modified FileProcessor.java:
 
-![Image](ModifiedFile_First.png)
+![Image](modifiedFile_First.png)
 
 Markdown for what I added:
 ```
