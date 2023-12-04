@@ -133,7 +133,6 @@ Output:
 ![Image](wordcount_output.png)
 
 
-
 #### TA
 It looks like the issue is with the word counting logic in your Java program. Can you share the relevant part of your Java code where you are counting words? We need to ensure it handles cases like multiple spaces, punctuation, etc.
 
@@ -161,7 +160,59 @@ Thank you, I got the correct output.
 Output:
 ![Image](wordcount_fixedoutput.png)
 
+#### Final Modified FileProcessor.java:
 
 
+![Image](finalmodifiedFile.png)
+
+Markdown:
+```
+import java.nio.file.*;
+import java.io.*;
+
+public class FileProcessor {
+    public static void main(String[] args) {
+        if (args.length != 1) {
+            System.out.println("Usage: java FileProcessor <filename>");
+            return;
+        }
+        
+        String filename = args[0];
+        Path file = Paths.get(filename);
 
 
+        try{
+
+            if (!Files.exists(file) || Files.isDirectory(file)) {
+                System.out.println("File not found or is a directory: " + filename);
+                return;
+            } else if (Files.size(file) == 0) {
+                System.out.println("File is empty: " + filename);
+                return;
+            }
+
+            String content = Files.readString(file);
+            int wordCount = countWords(content);
+            System.out.println("Word Count: " + wordCount);
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+    }
+
+    private static int countWords(String content) {
+       // Updated to correctly count words, considering multiple spaces and punctuation
+        return content.trim().split("\\s+").length;
+    }
+}
+```
+
+
+![Image](finalmodifiedbash.png)
+
+Markdown:
+```
+#!/bin/bash
+
+javac FileProcessor.java
+java FileProcessor data.txt
+```
