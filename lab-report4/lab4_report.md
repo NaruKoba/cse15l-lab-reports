@@ -41,7 +41,7 @@ change current directory to lab7 directory
 ```
  $ bash<space>tes<tab>.sh<enter>
 ```
-<tab>: Names can be autofilled by pressing the Tab key, if the they exist.
+`<tab>`: Names can be autofilled by pressing the Tab key, if the they exist.
 Typed bash test.sh to compile all of java files and run ListExamplesTests in lab7 directory.
 
 ## Step 7: Edit the Code File (ListExamples.java)
