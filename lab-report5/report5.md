@@ -1,3 +1,4 @@
+# Part1  Debugging Scenario
 ## The file & directory structure
 
 ## The contents of each file before fixing the bug
@@ -226,3 +227,7 @@ Markdown:
 javac FileProcessor.java
 java FileProcessor data.txt
 ```
+
+# Part2 Reflection
+
+I learned how to transfer data from a local to a remote server. I am also glad to know how to use Debbagger with jdb command. I didn't know how I could set breakpoints and run to debug my code. These skills would help me solve any error I face in the future program. I also enjoyed how to use Vim editor, which is different from a normal code editor. It was hard to memorize every command to move cursor around until I get used to it, but I felt it quite convinient now since I can jump to specific line in my code with a specific command, for example : the line number.
