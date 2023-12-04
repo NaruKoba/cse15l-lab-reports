@@ -157,7 +157,8 @@ I fixed the code like the following:
 
 Thank you, I got the correct output.
 
-
+Output:
+![Image](wordcount_fixedoutput.png)
 
 
 
