@@ -76,6 +76,15 @@ Any suggestions on what might be going wrong?
 
 ![Image](bash_output1.png)
 
+command executed on terminal:
+```
+$ bash analysis.sh
+```
+
+Markdown for output:
+```
+Error reading file: wrongfile.tt
+```
 #### TA:
 To address the first issue, could you insert a print statement in your Java code to show the file's contents that it's reading? This will help us verify if the file reading part is working correctly.
 
