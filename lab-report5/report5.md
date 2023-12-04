@@ -109,7 +109,7 @@ return;
 
 command executed on terminal:
 ```
-$bash analysis.sh
+$ bash analysis.sh
 ```
 Output:
 ![Image](First_student.png)
@@ -134,7 +134,7 @@ Corrected analysis.sh:
 
 command executed on terminal:
 ```
-$bash analysis.sh
+$ bash analysis.sh
 
 ```
 
