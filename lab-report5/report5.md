@@ -11,3 +11,10 @@ Any suggestions on what might be going wrong?
 #### TA:
 To address the first issue, could you insert a print statement in your Java code to show the file's contents that it's reading? This will help us verify if the file reading part is working correctly.
 
+### StudentA:
+After adding a print statement in my Java program, I noticed it's reading an empty file or incorrect content.
+
+
+#### TA:
+Thanks for the update. It seems the issue might be with the file path or how the file is passed to the Java program. Please check the file path in your Bash script and make sure the file exists and is not empty.
+
