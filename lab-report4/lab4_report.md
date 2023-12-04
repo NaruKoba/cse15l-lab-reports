@@ -57,7 +57,7 @@ $ vim<space>List<tab>.java<enter>
 ```
 Inside of ListExamples.java:
 
-Typed `:44<enter>` to get to the error line and pressed `< l >` 6 times <l><l><l><l><l><l> for the cursor to be next to 1. Pressed `< i >` to change normal mode to insert mode. Pressed `< backspace >` to delete 1 and typed `< 2 >`. Pressed `<esc>` to return to normal mode. Pressed `:wq<enter>` to save changes and quit from vim editor. 
+Typed `:44<enter>` to get to the error line and pressed `< l >` 6 times `<l><l><l><l><l><l>` for the cursor to be next to 1. Pressed `< i >` to change normal mode to insert mode. Pressed `< backspace >` to delete 1 and typed `< 2 >`. Pressed `<esc>` to return to normal mode. Pressed `:wq<enter>` to save changes and quit from vim editor. 
 
 
 
