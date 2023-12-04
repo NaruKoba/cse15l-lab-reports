@@ -2,7 +2,68 @@
 
 #### The contents of each file before fixing the bug
 
-#### FileProcessor.java 
+#### FileProcessor.java:
+
+![Image](original_FileProcessor.png)
+
+Markdown:
+```
+import java.nio.file.*;
+import java.io.*;
+
+public class DataProcessor {
+    public static void main(String[] args) {
+        if (args.length != 1) {
+            System.out.println("Usage: java DataProcessor <filename>");
+            return;
+        }
+
+        String filename = args[0];
+        Path file = Paths.get(filename);
+
+        try {
+            String content = Files.readString(file);
+            int wordCount = countWords(content);
+            System.out.println("Word Count: " + wordCount);
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+    }
+
+    private static int countWords(String content) {
+        return content.split(" ").length;
+    }
+}
+
+```
+
+### analysis.sh
+![Image](original_analysis.png)
+
+Markdown:
+```
+#!/bin/bash
+
+javac DataProcessor.java
+java DataProcessor wrongfile.txt
+
+```
+### data.txt
+
+![Image](original_data.png)
+
+Markdown:
+```
+Hello, this is a sample text file. 
+It contains multiple lines and various word counts.
+
+Some lines have more words than others.
+This line, for example, has exactly eight words.
+
+Punctuation! Shouldn't affect; the: word, count.
+
+```
+
 
 #### StudentA:
 I'm working on a project where I have a Java program that processes data from a file and then outputs results. There's also a Bash script that sets up the environment, compiles the Java code, and runs it with specific parameters. However, I'm encountering some odd behavior:
