@@ -1,6 +1,6 @@
-#### The file & directory structure
+## The file & directory structure
 
-#### The contents of each file before fixing the bug
+## The contents of each file before fixing the bug
 
 #### FileProcessor.java:
 
@@ -37,7 +37,7 @@ public class DataProcessor {
 
 ```
 
-### analysis.sh
+#### analysis.sh:
 ![Image](original_analysis.png)
 
 Markdown:
@@ -48,7 +48,7 @@ javac DataProcessor.java
 java DataProcessor wrongfile.txt
 
 ```
-### data.txt
+#### data.txt:
 
 ![Image](original_data.png)
 
@@ -64,6 +64,7 @@ Punctuation! Shouldn't affect; the: word, count.
 
 ```
 
+## Conversation:
 
 #### StudentA:
 I'm working on a project where I have a Java program that processes data from a file and then outputs results. There's also a Bash script that sets up the environment, compiles the Java code, and runs it with specific parameters. However, I'm encountering some odd behavior:
