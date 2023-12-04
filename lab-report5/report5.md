@@ -83,6 +83,7 @@ To address the first issue, could you insert a print statement in your Java code
 After adding a print statement in my Java program, I noticed it's reading an empty file or incorrect content. It seems the issue might be with the file path or how the file is passed to the Java program.
 
 Modified FileProcessor.java:
+
 ![Image](ModifiedFile_first.png)
 
 Mark down for what I added:
