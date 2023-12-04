@@ -123,6 +123,12 @@ java FileProcessor data.txt
 Corrected analysis.sh:
 ![Image](second_analysis.png)
 
+command executed on terminal:
+```
+$bash analysis.sh
+
+```
+
 Output:
 ![Image](wordcount_output.png)
 
