@@ -90,7 +90,7 @@ Error reading file: wrongfile.tt
 #### TA:
 To address the first issue, could you insert a print statement in your Java code to show the file's contents that it's reading? This will help us verify if the file reading part is working correctly.
 
-### StudentA:
+#### StudentA:
 After adding a print statement in my Java program, I noticed it's reading an empty file or incorrect content. It seems the issue might be with the file path or how the file is passed to the Java program.
 
 Modified FileProcessor.java:
@@ -123,7 +123,7 @@ File not found or is a directory: wrongfile.txt
 #### TA:
 Thanks for the update. Please check the file path in your Bash script and make sure the file exists and is not empty.
 
-### StudentA:
+#### StudentA:
 I checked and corrected the file path in the Bash script. Now the Java program reads the correct file, but the processing logic still seems off. The word count is incorrect.
 
 Markdown for how I fixed in the bash script:
@@ -147,7 +147,7 @@ Output:
 #### TA
 It looks like the issue is with the word counting logic in your Java program. Can you share the relevant part of your Java code where you are counting words? We need to ensure it handles cases like multiple spaces, punctuation, etc.
 
-### StudentA:
+#### StudentA:
 Here's the Java code snippet for word counting. I can't find what's wrong here. Probably, it has an issue with splitting words?
 ```
  private static int countWords(String content) {
@@ -158,7 +158,7 @@ Here's the Java code snippet for word counting. I can't find what's wrong here. 
 #### TA
 Yes, The word counting logic doesn't handle multiple spaces or punctuation properly. Update it to split words more accurately, considering these cases.
 
-### StudentA:
+#### StudentA:
 I fixed the code like the following for countWords method in FileProcessor.java:
 ```
 // Updated to correctly count words, considering multiple spaces and punctuation
