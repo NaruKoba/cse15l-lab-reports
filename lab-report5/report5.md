@@ -69,7 +69,7 @@ Punctuation! Shouldn't affect; the: word, count.
 ## Conversation:
 
 #### StudentA:
-I'm working on a project where I have a Java program that processes data from a file and then outputs results. There's also a Bash script that sets up the environment, compiles the Java code, and runs it with specific parameters. However, I'm encountering some odd behavior:
+I'm working on a project where I have a Java program that processes data from a file and then outputs results. My current directory is the directory where the files I would like to work on exist. There's also a Bash script that sets up the environment, compiles the Java code, and runs it with specific parameters. However, I'm encountering some odd behavior:
 
 The Java program doesn't seem to process the file data correctly.
 
