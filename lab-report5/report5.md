@@ -1,5 +1,6 @@
 # Part1  Debugging Scenario
 ## The file & directory structure
+![Image](structure.png)
 
 ## The contents of each file before fixing the bug
 
@@ -96,7 +97,7 @@ Modified FileProcessor.java:
 
 ![Image](modifiedFile_First.png)
 
-Markdown for what I added:
+Markdown for how I added in FileProcessor.java:
 ```
 if (!Files.exists (file) || Files.isDirectory (file)) (
 System.out.printin("File not found or is a directory: " + filename);
@@ -125,7 +126,7 @@ Thanks for the update. Please check the file path in your Bash script and make s
 ### StudentA:
 I checked and corrected the file path in the Bash script. Now the Java program reads the correct file, but the processing logic still seems off. The word count is incorrect.
 
-Markdown for what I fixed:
+Markdown for how I fixed in the bash script:
 ```
 java FileProcessor data.txt
 ```
@@ -158,7 +159,7 @@ Here's the Java code snippet for word counting. I can't find what's wrong here. 
 Yes, The word counting logic doesn't handle multiple spaces or punctuation properly. Update it to split words more accurately, considering these cases.
 
 ### StudentA:
-I fixed the code like the following:
+I fixed the code like the following for countWords method in FileProcessor.java:
 ```
 // Updated to correctly count words, considering multiple spaces and punctuation
         return content.trim().split("\\s+").length;
